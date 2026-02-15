@@ -1,0 +1,127 @@
+<!-- 
+AULA 3 - HTML SEMÂNTICO
+Autor: Eric Souza
+Objetivo: Demonstrar estrutura profissional utilizando tags semânticas
+Data: 2026
+-->
+
+<!DOCTYPE html>
+<!-- 
+Define o tipo de documento como HTML5.
+Sempre deve ser a primeira linha do arquivo.
+-->
+
+<html lang="pt-br">
+<!-- 
+Define o idioma da página.
+Isso ajuda no SEO e na acessibilidade.
+-->
+
+<head>
+    <!-- Define o padrão de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Responsividade para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página (importante para SEO) -->
+    <title>Aula 3 - HTML Semântico</title>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <!-- 
+    O header representa o cabeçalho da página.
+    Pode conter logo, título e navegação.
+    -->
+
+    <header>
+        <h1>Eric Souza - Web Designer</h1>
+        <!-- 
+        h1 deve existir apenas uma vez por página.
+        Representa o assunto principal.
+        -->
+
+        <!-- ================= NAV ================= -->
+        <!-- 
+        A tag nav é usada para menus de navegação.
+        -->
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Projetos</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <!-- 
+    A tag main representa o conteúdo principal da página.
+    Deve existir apenas uma vez.
+    -->
+
+    <main>
+
+        <!-- ================= SECTION SOBRE ================= -->
+        <!-- 
+        Section é usada para dividir conteúdos temáticos.
+        Sempre que possível, use um título dentro dela.
+        -->
+
+        <section>
+            <h2>Sobre Mim</h2>
+            <p>
+                Sou Web Designer focado em desenvolvimento WordPress,
+                estruturação semântica e boas práticas de front-end.
+            </p>
+        </section>
+
+        <!-- ================= SECTION PROJETOS ================= -->
+
+        <section>
+            <h2>Projetos</h2>
+
+            <!-- 
+            Article representa um conteúdo independente.
+            Pode ser reutilizado fora do contexto da página.
+            -->
+
+            <article>
+                <h3>Projeto 1 - Site Institucional</h3>
+                <p>Desenvolvido com WordPress e Elementor.</p>
+            </article>
+
+            <article>
+                <h3>Projeto 2 - Landing Page</h3>
+                <p>Foco em conversão e performance.</p>
+            </article>
+
+        </section>
+
+        <!-- ================= ASIDE ================= -->
+        <!-- 
+        Aside representa conteúdo complementar,
+        como informações extras, anúncios ou links relacionados.
+        -->
+
+        <aside>
+            <h2>Redes Sociais</h2>
+            <p>Instagram | LinkedIn | GitHub</p>
+        </aside>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <!-- 
+    Footer representa o rodapé da página.
+    Pode conter direitos autorais e informações finais.
+    -->
+
+    <footer>
+        <p>© 2026 Eric Souza - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
