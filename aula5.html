@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configuração de caracteres -->
+    <meta charset="UTF-8">
+    
+    <!-- Responsividade para celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página (aparece na aba do navegador) -->
+    <title>Aula 5 - Formulários HTML</title>
+
+    <!-- Estilo básico com CSS interno -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px 0;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Aula 5 - Formulários em HTML</h1>
+
+    <!-- 
+        FORMULÁRIO
+        action="#" significa que não envia para servidor
+        method="post" envia dados de forma mais segura
+    -->
+    <form action="#" method="post">
+
+        <!-- Campo Nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <!-- Campo Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Campo Idade -->
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade">
+
+        <!-- Radio Button (Sexo) -->
+        <label>Sexo:</label><br>
+        <input type="radio" name="sexo" value="masculino"> Masculino
+        <input type="radio" name="sexo" value="feminino"> Feminino
+        <input type="radio" name="sexo" value="outro"> Outro
+
+        <br><br>
+
+        <!-- Select (Estado) -->
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Minas Gerais</option>
+        </select>
+
+        <!-- Textarea (Mensagem) -->
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+        <!-- Botão Enviar -->
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
